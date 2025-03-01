@@ -4,7 +4,7 @@ import * as Yup from 'yup';
 import { useDispatch } from 'react-redux';
 import { addContact } from '../../redux/contactsOps';
 
-const ContactsForm = () => {
+const ContactForm = () => {
   const dispatch = useDispatch();
 
   const initialValues = {
@@ -51,4 +51,4 @@ const ContactsForm = () => {
   );
 };
 
-export default ContactsForm;
+export default ContactForm;

@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { fetchContacts } from './redux/contactsOps';
 import { useSelector } from 'react-redux';
 import { selectLoading, selectError } from './redux/contactsSlice';
-import ContactsForm from './components/ContactsForm/ContactsForm';
+import ContactForm from './components/ContactForm/ContactForm';
 import ContactList from './components/ContactList/ContactList';
 import SearchBox from './components/SearchBox/SearchBox';
 
@@ -23,7 +23,7 @@ const App = () => {
     <div>
       <h1>Телефонна книга</h1>
       <SearchBox />
-      <ContactsForm />
+      <ContactForm />
       <ContactList />
     </div>
   );
